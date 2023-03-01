@@ -14,7 +14,8 @@ function App(props) {
   const [getInfo, setInfo] = useState([]);
   const [data, setData] = useState([]);
   return (
-    <Router>
+    <Router basename=" /irkBitig-App /">
+      <Link to="/Anasayfa"/> // 
       <Navbar />
       <Data setInfo={setInfo} />
       <Container>
