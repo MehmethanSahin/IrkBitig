@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-image {
+  background-image: url("https://cdn.midjourney.com/fda3b62a-4d5d-4a38-86ef-4201d3e284cc/grid_0.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  backdrop-filter: blur(px);
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.landing-content {
+  width: 100%;
+  padding: 0 15px;
+  max-width: 768px;
+}
+
+.landing-button {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 1rem 1rem;
+  background-color: #f2711c;
+  border: 2px solid #f2711c;
+  color: #f8f9fa;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  
+}
+
+.landing-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #14a44d;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.landing-button:hover {
+  color: black;
+}
+
+.landing-button:hover::before {
+  transform: scaleX(1);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+}
+
+.landing-heading {
+  font-family: "Tangerine", cursive;
+  font-size: 3rem;
+  letter-spacing: 0.5em;
+  text-shadow: 1px 1px 0 #632d2d, 2px 2px 0 #632d2d, 3px 3px 0 #632d2d,
+    4px 4px 0 #632d2d, 5px 5px 0 #632d2d;
+  color: #ffdf80;
+  margin-bottom: 2rem;
+  animation: fade-in 2s ease-out;
+}
+
+.landing-subheading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: black;
+  margin-bottom: 3rem;
+  animation: fade-in 2s ease-out;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.landing-heading:hover {
+  text-shadow: 1px 1px 0 #aaaaaa, 2px 2px 0 #aaaaaa, 3px 3px 0 #aaaaaa,
+    4px 4px 0 #aaaaaa, 5px 5px 0 #aaaaaa;
+  transition: text-shadow 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 360px) {
+  .landing-heading{
+    font-size: 1.9rem;
+    margin-top: 7rem;
+  }
+  .landing-subheading{
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .landing-heading{
+    font-size: 2rem;
+    margin-top: 7rem;
+  }
+  .landing-subheading{
+    font-size: 1rem;
+  }
+
+}

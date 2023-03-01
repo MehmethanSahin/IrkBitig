@@ -1,0 +1,21 @@
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #dc4c64;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #54b4d3;
+  margin-top: 25px;
+  margin-bottom: 39px;
+  text-align: justify;
+}

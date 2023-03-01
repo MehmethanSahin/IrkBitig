@@ -1,0 +1,27 @@
+.footer {
+    background-color: rgb(30, 29, 29);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    position: absolute;
+    font-size: 12px;
+    position: fixed;
+    display: flex; 
+    align-items: center; 
+    ;
+  }
+
+  .footer p {
+    margin: 0;
+    flex: 1; /* yeni ekledik */
+  }
+
+  @media only screen and (max-width: 768px) {
+    .footer {
+      font-size: 9px;
+    }
+  }

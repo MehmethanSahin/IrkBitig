@@ -1,0 +1,85 @@
+.card {
+  max-width: 500px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  max-height: 1000px;
+
+}
+
+.container {
+  max-width: 1200px;
+}
+
+#fixebutton {
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+ 
+}
+
+.card-img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  border-radius: 20px 20px 0 0;
+}
+
+.card-content {
+  position: absolute;
+  padding: 5px;
+  float: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+/* Small telefonlar */
+@media (max-width: 576px) {
+  .card {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 4px;
+  }
+  .card-text {
+    font-size: 0.6rem;
+  }
+}
+
+/* Tabletler */
+@media (min-width: 577px) and (max-width: 991px) {
+  .card {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 4px;
+  }
+  .card-text {
+    font-size: 0.8rem;
+  }
+}
+
+/* Larger smartphone'lar */
+@media (min-width: 576px) and (max-width: 767px) {
+  .card {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 4px;
+  }
+  .card-text {
+    font-size: 0.7rem;
+  }
+}
+
+/* Laptop ve büyük ekranlar */
+@media (min-width: 992px) {
+  .card {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 4px;
+  }
+  .card-text {
+    font-size: 1.2rem;
+  }
+}
