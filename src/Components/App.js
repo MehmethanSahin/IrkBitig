@@ -19,7 +19,7 @@ function App(props) {
       <Data setInfo={setInfo} />
       <Container>
         <Routes>
-        <Route path="/irkBitig-App" element={<Anasayfa />} />
+        <Route path="irkBitig-App" element={<Anasayfa />} />
           <Route path="/Anasayfa" element={<Anasayfa />} />
           <Route path="/Nedir" element={<Nedir />} />
           <Route path="/Cards"element={<Cards getInfo={getInfo} setInfo={setInfo} />}/>
