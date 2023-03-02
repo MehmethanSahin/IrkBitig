@@ -14,22 +14,23 @@ function App(props) {
   const [getInfo, setInfo] = useState([]);
   const [data, setData] = useState([]);
   return (
-
-    <Router >
-
-
-
+    <Router>
       <Navbar />
       <Data setInfo={setInfo} />
       <Container>
         <Routes>
-
           <Route path="/" element={<Anasayfa />} />
-        <Route  exact path="/" element={<Anasayfa />} />
+          <Route exact path="/" element={<Anasayfa />} />
           <Route path="/Anasayfa" element={<Anasayfa />} />
           <Route path="/Nedir" element={<Nedir />} />
-          <Route path="/Cards"element={<Cards getInfo={getInfo} setInfo={setInfo} />}/>
-          <Route path="/Galeri" element={<Galeri data={data} getInfo={getInfo} setInfo={setInfo} />}/>
+          <Route
+            path="/Cards"
+            element={<Cards getInfo={getInfo} setInfo={setInfo} />}
+          />
+          <Route
+            path="/Galeri"
+            element={<Galeri data={data} getInfo={getInfo} setInfo={setInfo} />}
+          />
         </Routes>
       </Container>
       <Footer />
