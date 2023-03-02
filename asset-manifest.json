@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/irkBitig/static/css/main.1073467c.css",
+    "main.js": "/irkBitig/static/js/main.25051dcb.js",
+    "index.html": "/irkBitig/index.html",
+    "main.1073467c.css.map": "/irkBitig/static/css/main.1073467c.css.map",
+    "main.25051dcb.js.map": "/irkBitig/static/js/main.25051dcb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1073467c.css",
+    "static/js/main.25051dcb.js"
+  ]
+}
