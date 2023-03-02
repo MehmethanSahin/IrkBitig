@@ -14,22 +14,19 @@ function App(props) {
   const [getInfo, setInfo] = useState([]);
   const [data, setData] = useState([]);
   return (
-<<<<<<< HEAD
-    <Router basename="/irkBitig-App"
-    >
-=======
-    <Router>
->>>>>>> a469eacc0ee3a3a636c7c55cf9cf32bf1ce15b70
+
+    <Router >
+
+
+
       <Navbar />
       <Data setInfo={setInfo} />
       <Container>
         <Routes>
-<<<<<<< HEAD
+
           <Route path="/" element={<Anasayfa />} />
-=======
         <Route  exact path="/" element={<Anasayfa />} />
           <Route path="/Anasayfa" element={<Anasayfa />} />
->>>>>>> a469eacc0ee3a3a636c7c55cf9cf32bf1ce15b70
           <Route path="/Nedir" element={<Nedir />} />
           <Route path="/Cards"element={<Cards getInfo={getInfo} setInfo={setInfo} />}/>
           <Route path="/Galeri" element={<Galeri data={data} getInfo={getInfo} setInfo={setInfo} />}/>
