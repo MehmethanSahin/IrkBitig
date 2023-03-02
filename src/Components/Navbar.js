@@ -10,7 +10,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar__logo d-flex justify-content-start">Irk Bitig</div>
       <ul className="navbar__links">
-        <li>
+        <li  >
           <NavLink to="/Anasayfa" onClick={() => changeColor()}>
             Anasayfa
           </NavLink>

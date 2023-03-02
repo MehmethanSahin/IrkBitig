@@ -14,14 +14,13 @@ function App(props) {
   const [getInfo, setInfo] = useState([]);
   const [data, setData] = useState([]);
   return (
-    <Router basename=" /irkBitig-App /">
-      <Link to="/Anasayfa"/> // 
+    <Router basename="/irkBitig-App"
+    >
       <Navbar />
       <Data setInfo={setInfo} />
       <Container>
         <Routes>
-        <Route path="irkBitig-App" element={<Anasayfa />} />
-          <Route path="/Anasayfa" element={<Anasayfa />} />
+          <Route path="/" element={<Anasayfa />} />
           <Route path="/Nedir" element={<Nedir />} />
           <Route path="/Cards"element={<Cards getInfo={getInfo} setInfo={setInfo} />}/>
           <Route path="/Galeri" element={<Galeri data={data} getInfo={getInfo} setInfo={setInfo} />}/>
